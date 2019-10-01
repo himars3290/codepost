@@ -1,5 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,700&display=swap");
+body, html {
+  height: 100%; }
+
 body {
   background: #2A3136;
   color: #88949D;
@@ -21,5 +24,19 @@ a:hover {
 .cta-btn:hover {
   background: #00E4AC;
   color: #2A3136; }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 4.2em;
+  line-height: 1.2em; }
+
+.body-blur {
+  background: #2A3136 url("/assets/images/blurbg.jpg") no-repeat top center !important;
+  background-size: 90% !important;
+  height: 100%; }
 
 /*# sourceMappingURL=styles.css.map */

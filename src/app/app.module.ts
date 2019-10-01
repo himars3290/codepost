@@ -9,6 +9,7 @@ import { HomeComponent } from './component/home/home.component';
 
 import {HttpModule} from '@angular/http';
 import { DetailsComponent } from './component/details/details.component';
+import { LengthPipe } from './length.pipe';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { DetailsComponent } from './component/details/details.component';
     NavComponent,
     HomeComponent,
     DetailsComponent,
+    LengthPipe,
   ],
   imports: [
     BrowserModule,
