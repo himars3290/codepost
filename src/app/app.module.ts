@@ -4,16 +4,18 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {PostService} from './service/post.service';
-import { NavComponent } from './components/nav/nav.component';
-import { HomeComponent } from './components/home/home.component';
+import { NavComponent } from './component/nav/nav.component';
+import { HomeComponent } from './component/home/home.component';
 
 import {HttpModule} from '@angular/http';
+import { DetailsComponent } from './component/details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    DetailsComponent,
   ],
   imports: [
     BrowserModule,

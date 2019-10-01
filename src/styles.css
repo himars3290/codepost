@@ -9,17 +9,17 @@ a {
   color: #ffffff; }
 
 a:hover {
-  color: #00EA4C; }
+  color: #00E4AC; }
 
 .cta-btn, .cta-btn:visited {
-  color: #00EA4C;
-  border: 1px solid #00EA4C;
+  color: #00E4AC;
+  border: 1px solid #00E4AC;
   padding: 5px 12px;
   float: right;
   border-radius: 5px; }
 
 .cta-btn:hover {
-  background: #00EA4C;
+  background: #00E4AC;
   color: #2A3136; }
 
 /*# sourceMappingURL=styles.css.map */

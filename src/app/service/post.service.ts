@@ -17,4 +17,11 @@ export class PostService {
         map(result => this.result = result.json())
       );
   }
+
+  getPost(id) {
+    return this._http.get('/api/posts/' + id)
+      .pipe(
+        map(result => this.result = result.json())
+      );
+  }
 }
