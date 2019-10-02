@@ -10,6 +10,8 @@ import { HomeComponent } from './component/home/home.component';
 import {HttpModule} from '@angular/http';
 import { DetailsComponent } from './component/details/details.component';
 import { LengthPipe } from './length.pipe';
+import { PostComponent } from './component/post/post.component';
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,11 +20,14 @@ import { LengthPipe } from './length.pipe';
     HomeComponent,
     DetailsComponent,
     LengthPipe,
+    PostComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpModule
+    HttpModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [PostService],
   bootstrap: [AppComponent]

@@ -39,4 +39,21 @@ router.get('/posts/:id', function (req, res) {
 
 });
 
+router.post('/post', function (req, res) {
+  console.log("posting post");
+  var newPost = new post();
+  newPost.title = req.body.title;
+  newPost.url = req.body.url;
+  newPost.description = req.body.description;
+  newPost.save(function (err, addedPost) {
+    if (err) {
+      console.log("Error adding the post");
+    } else {
+      res.json(addedPost);
+    }
+
+  })
+
+});
+
 module.exports = router;
